@@ -28,14 +28,14 @@ void WelcomeMessage(){
     const void *message= "Welcome in ENSEA tiny Shell.\nType 'exit' to quit.\n";
 
     //Display of a welcome message
-    /*ssize_t bytesWrite = */write(STDOUT_FILENO, message, strlen(message));
+    write(STDOUT_FILENO, message, strlen(message));
 }
 
 void Prompt(){
     const void *prompt="enseash % ";
 
     //Display of a simple prompt
-    /*ssize_t bytesWrite = */write(STDOUT_FILENO, prompt, strlen(prompt));
+    write(STDOUT_FILENO, prompt, strlen(prompt));
 }
 
 int main(){
